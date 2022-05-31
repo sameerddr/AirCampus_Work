@@ -1,3 +1,3 @@
-![alt text](31_May_2022\Capture.PNG)
+<img src="Capture.PNG">
 
-<h1> Output </h1>
+<h1> output </h1>
