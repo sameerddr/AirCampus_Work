@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 80px;
+}
+
+.nav {
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: large;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 60px;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+    padding-left: 20px;
+}
+
+.button {
+    padding: 15px;
+    margin-right: 80px;
+}
+
+button {
+    padding: 10px 40px;
+    border-radius: 35px;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+.nav a span:hover {
+    color: yellow;
+    border-bottom: 2px solid white;
+    border-width: 4px;
+}
+
+
+/* Main section 1 part  */
+
+.first_part {
+    margin-left: 250px;
+}
+
+.container {
+    float: left;
+    width: 1000px;
+    height: auto;
+}
+
+.container1 {
+    background-color: salmon;
+    border: 4px solid red;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.container2 {
+    background-color: mediumaquamarine;
+    border: 4px solid red;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.container3 {
+    background-color: skyblue;
+    border: 4px solid red;
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.cont {
+    border: 4px solid red;
+    width: 300px;
+    height: 400px;
+    margin: 40px 310px;
+    overflow: scroll;
+    /* margin-top: 40px; */
+}
+
+.box1 {
+    background-color: darkgray;
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.box2 {
+    background-color: burlywood;
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.box3 {
+    background-color: rgb(190, 171, 171);
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 20px 280px;
+}
+
+.second_part {
+    margin-left: 250px;
+}
+
+
+/* #sq1 {
+    position: relative;
+}
+
+#sq2 {
+    position: absolute;
+    left: 50px;
+    top: 0;
+} */
+
+
+/* .sq1 {
+    background-color: burlywood;
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    margin-left: 90px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.sq2 {
+    background-color: burlywood;
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    margin-left: 90px;
+    margin-top: 10px;
+} */
