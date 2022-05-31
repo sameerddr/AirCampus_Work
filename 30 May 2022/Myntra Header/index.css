@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea&family=Dancing+Script:wght@600&family=Indie+Flower&family=Oswald:wght@500&family=Patrick+Hand&family=Permanent+Marker&family=Righteous&family=Roboto+Slab:wght@300;500;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    background-color: #fff;
+    height: 70px;
+    flex-wrap: wrap;
+    font-family: 'Caladea', serif;
+    font-weight: bold;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.sa {
+    padding-left: 5px;
+}
+
+.left {
+    display: flex;
+    padding-left: 70px;
+    padding-top: 25px;
+}
+
+.a {
+    padding: 2px 30px;
+    font-size: smaller;
+    background-color: rgb(243, 242, 242);
+}
+
+button {
+    padding: 1px 4px;
+}
+
+.right {
+    padding-left: 100px;
+}
+
+.right a {
+    padding-left: 50px;
+    text-decoration: none;
+}
+
+.nav a {
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+img {
+    margin: 0;
+    padding-top: 0;
+    width: 50px;
+    display: inline-block;
+    background-color: #fff;
+}
