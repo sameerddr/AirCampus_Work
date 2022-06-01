@@ -18,21 +18,22 @@
 }
 
 .nav a {
+    margin: 0 auto;
     color: white;
     text-decoration: none;
-    padding-right: 60px;
+    padding-left: 60px;
     font-family: 'Roboto Slab', serif;
 }
 
 h1 {
     font-size: 50px;
     font-family: 'Righteous', cursive;
-    padding-left: 20px;
+    padding-left: 80px;
 }
 
 .button {
     padding: 15px;
-    margin-right: 80px;
+    margin-right: 60px;
 }
 
 button {
@@ -135,9 +136,28 @@ h2 {
     border: 4px solid red;
     width: 300px;
     height: 400px;
-    margin: 40px 310px;
+    margin: 0px 310px;
+    margin-top: 20px;
     overflow: scroll;
     /* margin-top: 40px; */
+    position: relative;
+}
+
+.sameer {
+    border: 4px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: absolute;
+    left: 600px;
+    top: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 .box2 .change {
+    background-color: black;
 }
 
 .second_part {
