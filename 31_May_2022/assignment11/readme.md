@@ -1,1 +1,1 @@
-![alt text](screenshot.png)
+<img src="screenshot.png">
