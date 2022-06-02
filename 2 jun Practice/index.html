@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="stylegrid.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+        font-family: 'Gugi', cursive;
+    }
+    
+    main {
+        width: 75%;
+        margin: 50px auto;
+        border: 1px solid grey;
+        display: grid;
+        color: white;
+        grid-template-rows: 60px 100px 200px 60px;
+        grid-template-columns: repeat(3, 1fr) 150px;
+        grid-gap: 20px;
+    }
+    
+    .div1 {
+        background-color: #ff4757;
+        grid-column: 1/-1;
+    }
+    
+    .div2 {
+        background-color: #2ed573;
+    }
+    
+    .div3 {
+        background-color: #1e90ff;
+    }
+    
+    .div4 {
+        background-color: #5352ed;
+    }
+    
+    .div5 {
+        background-color: #2f3542;
+        grid-row: 2/4;
+        grid-column: 4/5;
+    }
+    
+    .div6 {
+        background-color: #ffa502;
+        grid-column: 1/ 4;
+    }
+    
+    .div7 {
+        background-color: #00d2d3;
+        grid-column: 1/-1;
+    }
+</style>
+
+<body>
+
+    <main>
+        <div class="div1"> header </div>
+        <div class="div2"> box1 </div>
+        <div class="div3"> box2 </div>
+        <div class="div4"> box3 </div>
+        <div class="div5"> sidebar </div>
+        <div class="div6"> main content DONATION FOR SUPPORT: PhonePay = vinodbahadur@ybl GooglePay: vbthapa55@oksbi Believe me all this money will be used to make more quality videos and to make my channel grow. So that I can always provide you awesome free videos :)
+        </div>
+        <div class="div7">footer</div>
+    </main>
+
+</body>
+
+</html>

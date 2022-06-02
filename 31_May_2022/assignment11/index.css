@@ -321,6 +321,9 @@ i {
     padding: 4px;
 }
 
+
+/* --------Back to top button bar ---------- */
+
 .top {
     place-self: end;
     position: sticky;
