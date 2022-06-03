@@ -1,1 +1,1 @@
-<img src="/grid.png">
+![alt text](grid.png)
