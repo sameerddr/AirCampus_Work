@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            /*flex-wrap: wrap;*/
+            flex-wrap: wrap;
+            background-color: rgb(248, 8, 8);
+        }
+        
+        .flex-container>div {
+            background-color: #200505;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+        
+        .flex {
+            display: flex;
+            align-items: stretch;
+            background-color: #79eb1b;
+        }
+        
+        .flex>div {
+            background-color: DodgerBlue;
+            color: rgb(173, 19, 19);
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The flex-wrap Property</h1>
+
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+
+    <div class="flex">
+        <div style="order: 3">1</div>
+        <div style="order: 2">2</div>
+        <div style="order: 4">3</div>
+        <div style="order: 1">4</div>
+    </div>
+
+</body>
+
+</html>
