@@ -1,0 +1,65 @@
+body {
+    font-family: "Segoe UI", Tahoma, Helvetica, Arial, Verdana, sans-serif;
+    font-size: 14px;
+    margin: 5px 15px 5px 15px;
+    padding: 0;
+    background-color: #eee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Trebuchet MS", "Segoe UI", Helvetica, Tahoma, Arial, Verdana, sans-serif;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    color: blue;
+    font-style: italic;
+}
+
+p {
+    text-align: justify;
+    color: black;
+}
+
+.highlight {
+    background-color: #ff0;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.green {
+    color: green;
+    text-decoration: underline;
+}
+
+.blue {
+    color: blue;
+}
+
+a {
+    font-size: 10pt;
+    font-decoration: underline;
+    color: red;
+}
+
+a.blue:link {
+    color: blue;
+}
+
+a.green:link {
+    color: green;
+}
+
+a:hover {
+    font-decoration: none;
+    color: yellow;
+}
