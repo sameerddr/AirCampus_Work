@@ -8,9 +8,13 @@
 // c = process.argv[6];
 // console.log(c);
 
-let a = parseInt(Process.argv[2]);
-let b = parseInt(Process.argv[3]);
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
+// let a = parseInt(Process.argv[2]);
+// let b = parseInt(Process.argv[3]);
+// console.log(a + b);
+// console.log(a - b);
+// console.log(a * b);
+// console.log(a / b);
+
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+}
