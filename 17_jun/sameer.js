@@ -24,28 +24,63 @@
 //     console.log(a);
 //     a++;
 // }
+// ------------------------------------for loop------------
+// let a = parseInt(process.argv[2]);
+// for (i = 1; i <= a; i++) {
+//     console.log(i);
+// }
 
-let a = parseInt(process.argv[2]);
-for (i = 1; i <= a; i++) {
-    console.log(i);
+// for (i = 1; i <= a; i++) {
+//     if (i % 2 == 0) {
+//         console.log(i);
+//     }
+
+// }
+
+
+// let rev = 0;
+// let num = 123456;
+// let lastDigit;
+
+// while (num != 0) {
+//     lastDigit = num % 10;
+//     rev = rev * 10 + lastDigit;
+//     num = Math.floor(num / 10);
+// }
+
+// console.log("Reverse number : " + rev);
+
+
+
+
+// ---------------------while loop------------------
+// let b = parseInt(process.argv[3]);
+// let x = 1;
+// while (x <= b) {
+//     if (x % 2 == 0) {
+//         console.log(x);
+//         x++;
+//     }
+
+// }
+
+
+// let c = parseInt(process.argv[4]);
+// let y = 1;
+// while (y<c) {
+//     console.log(y)
+//     y++;
+// }
+
+
+// ------------------------------------------------
+//
+
+let a = 1;
+let b = 1;
+for (let i = 1; i <= 10; i++) {
+    console.log(a);
+    let c = a + b;
+    a = b;
+    b = c;
 }
-
-for (i = 1; i <= a; i++) {
-    if (i % 2 == 0) {
-        console.log(i);
-    }
-
-}
-
-
-let rev = 0;
-let num = 123456;
-let lastDigit;
-
-while (num != 0) {
-    lastDigit = num % 10;
-    rev = rev * 10 + lastDigit;
-    num = Math.floor(num / 10);
-}
-
-console.log("Reverse number : " + rev);
