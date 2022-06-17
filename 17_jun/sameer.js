@@ -76,11 +76,36 @@
 // ------------------------------------------------
 //
 
-let a = 1;
-let b = 1;
-for (let i = 1; i <= 10; i++) {
-    console.log(a);
-    let c = a + b;
-    a = b;
-    b = c;
+
+// let a = 1;
+// let b = 1;
+// for (let i = 1; i <= 10; i++) {
+//     console.log(a);
+//     let c = a + b;
+//     a = b;
+//     b = c;
+// }
+// num = parseInt(process.argv[4]);
+// if (num % 5 == 0) {
+//     console.log("World");
+// } else if (num % 3 == 0) {
+//     console.log("Hello");
+
+// } else if (num % 15 == 0) {
+//     console.log("Hello World");
+// } else {
+//     console.log(num);
+// }
+let num = 6
+let per = 0;
+for (let i = 0; i < num; i++) {
+    if (num % i == 0) {
+        per = per + i;
+    }
+}
+if (per == num) {
+    console.log("perfect number");
+} else {
+    console.log("perfect number");
+
 }
