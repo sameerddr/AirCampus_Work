@@ -11,3 +11,5 @@
 let a = parseInt(Process.argv[2]);
 let b = parseInt(Process.argv[3]);
 console.log(a + b);
+console.log(a - b);
+console.log(a * b);
