@@ -41,12 +41,17 @@
 //     }
 // }
 
-// Q4 = WAP to find the power of a number  Using  For loop
+// Q4 = WAP to find the power of a number  Using  For loop    (Not Correct)
 
-let num = parseInt(process.argv[2]);
-let power = parseInt(process.argv[3]);
+// let num = parseInt(process.argv[2]);
+// let power = parseInt(process.argv[3]);
 
-for (let i = 0; i < power; i++) {
-    num = num * power;
-}
-console.log(num);
+// for (let i = 0; i < power; i++) {
+//     num = num * power;
+// }
+// console.log(num);
+
+// Q5 = WAP to calculate the sum of digits in a Number
+
+// let num = parseInt(process.argv[2]);
+// var sum = 0;
