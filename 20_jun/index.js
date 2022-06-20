@@ -31,12 +31,22 @@
 
 // Q3 = WAP from loop that will iterate from 0 to 15. For each loop that will iterate from 0 to 15 . For each iteration ,  it will check that the current number is even or not and display a message 
 
-for (let i = 0; i < 15; i++) {
-    if (i == 0) {
-        console.log(i + " is even");
-    } else if (i % 2 == 0) {
-        console.log(i + " is even");
-    } else {
-        console.log(i + " is odd");
-    }
+// for (let i = 0; i < 15; i++) {
+//     if (i == 0) {
+//         console.log(i + " is even");
+//     } else if (i % 2 == 0) {
+//         console.log(i + " is even");
+//     } else {
+//         console.log(i + " is odd");
+//     }
+// }
+
+// Q4 = WAP to find the power of a number  Using  For loop
+
+let num = parseInt(process.argv[2]);
+let power = parseInt(process.argv[3]);
+
+for (let i = 0; i < power; i++) {
+    num = num * power;
 }
+console.log(num);
