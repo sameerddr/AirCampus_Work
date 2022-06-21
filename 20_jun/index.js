@@ -1,23 +1,23 @@
 // Q1 = Find the greatest of them 
 
 
-//  var a = 2;
-//  var b = 3;
-//  var c = 4;
-//  var d = 5;
-//  var e = 6;
+// var a = 2;
+// var b = 3;
+// var c = 9;
+// var d = 5;
+// var e = 6;
 
-//  if (a > b && a > c && a > d && a > e) {
-//      console.log(a);
-//  } else if (b > a && b > c && b > d && b > e) {
-//      console.log(b);
-//  } else if (c > a && c > b && c > d && c > e) {
-//      console.log(c);
-//  } else if (d > a && d > b && d > c && d > e) {
-//      console.log(d);
-//  } else if (e > a && e > b && e > c && e > d) {
-//      console.log(e);
-//  }
+// if (a > b && a > c && a > d && a > e) {
+//     console.log(a);
+// } else if (b > a && b > c && b > d && b > e) {
+//     console.log(b);
+// } else if (c > a && c > b && c > d && c > e) {
+//     console.log(c);
+// } else if (d > a && d > b && d > c && d > e) {
+//     console.log(d);
+// } else if (e > a && e > b && e > c && e > d) {
+//     console.log(e);
+// }
 
 // Q2 =  Sum of the Multiples of the  3 and 5 Under 1000
 
@@ -42,14 +42,15 @@
 // }
 
 // Q4 = WAP to find the power of a number  Using  For loop    (Not Correct)
-
-// let num = parseInt(process.argv[2]);
-// let power = parseInt(process.argv[3]);
-
-// for (let i = 0; i < power; i++) {
-//     num = num * power;
-// }
-// console.log(num);
+// 
+let number = parseInt(process.argv[2]);
+let power = parseInt(process.argv[3]);
+console.log(power);
+let num = number;
+for (let i = 0; i < power - 1; i++) {
+    number = number * num;
+}
+console.log(number);
 
 // Q5 = WAP to calculate the sum of digits in a Number
 
