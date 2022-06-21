@@ -16,3 +16,6 @@
                                                      sum(2, 3, 4);
 
                                                      // Arrow Function
+
+                                                     let sum = (a, b) => console.log(a + b);
+                                                     sum(44, 6);
