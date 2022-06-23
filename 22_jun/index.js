@@ -6,60 +6,65 @@
 
 
     // 1 &n 2 Point Expalained
-    let mul = (x, y) => {
-        console.log(x * y);
-    };
-    mul(2, 3);
+    // let mul = (x, y) => {
+    //     // console.log(x * y);
+    //     return x * y;
+    // };
+    // let value = mul(2, 3);
+    // console.log(value);
 
-    // 3 Point Explained
+    // // 3 Point Explained
     let mult = a => console.log(a * a);
-    mult(4);
+    let value = mult(4);
+    console.log("Lets di it",
+        value);
 
-    // Types Of Functions
-    // 1- First Class Function - We can assign The function in the variable and can call it 
-    // 2 - Higher Order Function - In which Function Is Passed As a Parameter or   a function can return a function
-    // 3 - First Order Function - In which no argument passed &dont have a return type
+    // // Types Of Functions
+    // // 1- First Class Function - We can assign The function in the variable and can call it 
+    // // 2 - Higher Order Function - In which Function Is Passed As a Parameter or   a function can return a function
+    // // 3 - First Order Function - In which no argument passed & dont have a return type
 
 
-    // 1 Point Explained 
+    // // 1 Point Explained 
     let sameer = function() {
         console.log("Sameer Is here");
     }
     sameer();
 
-    // 2 Point Explained
+    // // 2 Point Explained
     function x(para) {
-        para();
+        // para();
     }
 
     function y() {
-        console.log("Hello Bhai, Padhai Par Dhyan Laga");
+        console.log("Aree Bhai, Padhai Par Dhyan Laga");
     }
 
     x(y);
 
-    //  Here x is a higher Order function & y is a Call Back Function 
+    // // Here x is a higher Order function & y is a Call Back Function 
 
-    // 3 Point Explained
+    // // 3 Point Explained
     function first_order(x) {
         console.log("it is first order function");
     }
     first_order();
 
-    // IIFE (Imeediately Invoked Function Expression) - It automatically called the function & if you want to make your variable private You can use it !
+    // // IIFE (Imeediately Invoked Function Expression) - It automatically called the function & if you want to make your variable private You can use it !
     // Syntax -
     //     (function() {
     //         // Code Which You Want To Right
     //     })();
 
-    (function varshney() {
-        console.log("Kl Exam hai Php Ka");
-    })();
+    let value1 = (function varshney() {
+        console.log("Need To Work Smart Not Hard");
+    })
+    value1();
 
-    (function ddr() {
-        var a = 11;
-        console.log(a);
-    })();
+    // (function ddr() {
+    //     var a = 11;
+    //     console.log(a);
+    // })();
     // console.log(a);  here we cant acess the value of the "a"
 
-    // Function Recursion
+    // // Function Recursion  --->
