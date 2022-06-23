@@ -36,10 +36,10 @@
 
 
 
-  let myFunction = (a, b) => {
-      console.log(a * b);
-  }
-  myFunction(20, 3);
+  //   let myFunction = (a, b) => {
+  //       console.log(a * b);
+  //   }
+  //   myFunction(20, 3);
 
 
 
@@ -57,41 +57,62 @@
 
 
   // // 3 Point Explained
-  let myFunctionn = (a, b) =>
-      console.log(a * b);
+  //   let myFunctionn = (a, b) =>
+  //       console.log(a * b);
 
-  myFunctionn(20, 3);
+  //   myFunctionn(20, 3);
 
   // // Types Of Functions
   // // 1- First Class Function - We can assign The function in the variable and can call it 
   // // 2 - Higher Order Function - In which Function Is Passed As a Parameter or   a function can return a function
-  // // 3 - First Order Function - In which no argument passed & dont have a return type
+  // // 3 - First Order Function - In which no argument passed as function & dont have a return type
 
 
   // // 1 Point Explained 
-  let sameer = function() {
-      console.log("Sameer Is here");
-  }
-  sameer();
+  //   let sameer = function() {
+  //       console.log("Sameer Is here");
+  //   }
+  //   sameer();
+
+
+
+
+  //   function add(a, s) {
+  //       return (a + s);
+  //   }
+  //   let sum = console.log(add(34, 6));
 
   // // 2 Point Explained
-  function x(para) {
-      // para();
-  }
 
-  function y() {
-      console.log("Aree Bhai, Padhai Par Dhyan Laga");
-  }
 
-  x(y);
+
+  //   function x(para) {
+  //       // para();
+  //   }
+
+  //   function y() {
+  //       console.log("Aree Bhai, Padhai Par Dhyan Laga");
+  //   }
+
+  //   x(y);
 
   // // Here x is a higher Order function & y is a Call Back Function 
 
   // // 3 Point Explained
-  function first_order(x) {
-      console.log("it is first order function");
-  }
-  first_order();
+
+
+  //   function first_order() {
+  //       console.log("it is first order function");
+  //   }
+  //   first_order();
+
+
+
+
+  //   function first_order(x) {
+  //       console.log("it is first order function", x);
+  //   }
+  //   first_order(10);
 
   // // IIFE (Imeediately Invoked Function Expression) - It automatically called the function & if you want to make your variable private You can use it !
   // Syntax -
@@ -99,10 +120,22 @@
   //         // Code Which You Want To Right
   //     })();
 
-  let value1 = (function varshney() {
-      console.log("Need To Work Smart Not Hard");
-  })
-  value1();
+
+  //   (function varshney() {
+  //       console.log("Need To Work Smart Not Hard");
+  //   })();
+
+
+
+
+  //   let value1 = (function varshney() {
+  //       console.log("Need To Work Smart Not Hard");
+  //   })
+  //   value1();
+
+
+
+
 
   // (function ddr() {
   //     var a = 11;
