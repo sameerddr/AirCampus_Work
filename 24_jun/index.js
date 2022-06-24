@@ -36,11 +36,12 @@ var sum;
 function printnumber(i, n, sum) {
     // if (i == n) {
     //     sum += i;
-    //     console.log(sum);    
+    //     console.log(sum);
     //     return;
     // }
     sum += i;
     printnumber(i + 1, n, sum);
+    console.log(i);
 }
 
 printnumber(1, 5, 0);
