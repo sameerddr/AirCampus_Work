@@ -49,7 +49,7 @@
 
 // Q9 __>
 
-// Assisnement Question
+// Assisnement Question must D0
 sum = 0;
 
 function s(a) {
