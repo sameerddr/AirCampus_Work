@@ -45,3 +45,16 @@
 // }
 
 // printnumber(1, 5, 0);
+
+
+// Q9 __>
+sum = 0;
+
+function s(a) {
+    if (a <= 10) {
+        sum += a;
+        return s(a + 2);
+    }
+    return sum;
+}
+console.log(s(2));
