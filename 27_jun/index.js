@@ -71,3 +71,5 @@ function digitSum(num) {
 }
 console.log(digitSum(4367)); //20
 console.log(digitSum(56349)); //27
+
+// finish ...less code due to exam
