@@ -8,7 +8,7 @@
 //     }
 //     console.log(stars);
 // }
-
+// Q3
 // let num = 5;
 // for (let i = 1; i <= num; i++) {
 //     let stars = '';
@@ -19,3 +19,14 @@
 //     }
 //     console.log(stars);
 // }
+
+let num = 5;
+for (let i = 1; i <= num; i++) {
+    let stars = '';
+    for (let j = 1; j <= i; j++) {
+        // stars +='*';
+        stars = stars + i
+            // console.log("*");
+    }
+    console.log(stars);
+}
