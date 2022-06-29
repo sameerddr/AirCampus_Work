@@ -56,3 +56,5 @@ for (let i = 1; i <= numm; i++) {
     }
     console.log(stars);
 }
+
+// Q7
