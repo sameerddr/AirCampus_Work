@@ -38,10 +38,21 @@ for (let i = 1; i <= num; i++) {
     let stars = '';
     for (let j = 1; j <= i; j++) {
         stars = stars + count;
-        // stars = " "
         stars += " "
         count++;
     }
-    // stars += "\n"
+    console.log(stars);
+}
+// Q6-----------------------
+let numm = 5;
+for (let i = 1; i <= numm; i++) {
+    let stars = '';
+    for (let j = 1; j <= i; j++) {
+        if ((i + j) % 2 == 0) {
+            stars = 0
+        } else {
+            stars = 1
+        }
+    }
     console.log(stars);
 }
