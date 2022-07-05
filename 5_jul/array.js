@@ -32,3 +32,17 @@ console.log(type of{});    will return object
 console.log([] instanceof Array ); will return true 
 
 */
+
+let num = [10, 20];
+console.log(num[0], num[1]);
+
+let copy = num;
+console.log(num[0], num[1]);
+
+copy[0] = 15;
+
+console.log(num, copy);
+num[1] = 30;
+console.log(num, copy);
+
+// You Can Change The value Of The Array elements after declaration & and also be stored in new variable
