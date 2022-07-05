@@ -30,6 +30,11 @@ console.log(type of[]);    will return object
 console.log(type of{});    will return object
 
 console.log([] instanceof Array ); will return true 
+or isarray function 
+
+basical array is indexed elements
+object is named elements 
+
 
 */
 
