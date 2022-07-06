@@ -66,13 +66,30 @@ console.log(num, copy);
 // Array Methods--
 
 
-// Method 1 - pop() - The pop() method removes the last element from an array.
+// Method 1 - push() - The push() method add the last element in an array.
 
 const language = ["javascript", "React", "Css"];
 
-console.log(language.pop);
+language.push("dart");
+language.push("MongoDB");
 
-for (let i = 0; i < array.length; i++) {
+console.log(language);
 
-    console.log(language[i]);
-}
+// Method 2 - unshift() - The unshift() method add the  element in start of an array.
+
+language.unshift('Java');
+language.unshift('C++');
+
+console.log(language);
+
+// Method 3 - pop() - The pop() method removes the last element in an array.
+
+language.pop();
+language.pop("java"); // The java will not be deleted as the last element is only deleted 
+
+console.log(language);
+
+// Method 4 - shift() - The shift() method removes the  element in start of an array.
+
+language.shift();
+console.log(language);
