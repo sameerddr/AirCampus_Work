@@ -93,3 +93,78 @@ console.log(language);
 
 language.shift();
 console.log(language);
+
+// Method 5 - reverse() - It reversed The array elements
+
+language.reverse();
+console.log(language);
+
+// Method 6 - Array.isarray()  - Is Used To Check wheather it is a array or not
+
+console.log(Array.isArray(language));
+
+// Mthod 7 - .concat()--  returns a new array by merging two or more arrays
+
+
+let a = ["q", "b", "c", "d"];
+
+let b = [1, 3, 4, 5];
+
+let s = a.concat(b);
+console.log(s);
+
+
+// Method 8 - splice() - returns an array by changing (adding/removing) its elemets in places
+
+
+
+//             0        1       2      3
+let number = ["js", "python", "java", "c"];
+
+// let res = number.splice(2, 3, "react", "nodejs"); // replace the values of Index 2 and 3 by  React and nodejs
+
+// console.log(res);
+// console.log(number);
+
+// let re = number.splice("js", "python", "react", "nodejs"); // we only have to pass the index only for replacing the elemets 
+
+
+
+// console.log(number);
+
+
+// let result = number.splice(2, 3); // It will remove the elements at index at 2 & 3
+// console.log(number);
+
+let r = number.splice("php", "data struture"); // Nothing will effect the original array 
+console.log(number);
+
+// Method 9 -- lastindexof() - returns the index of the last occurence of a specified element in an array
+
+let pricelist = [12, 34, 565, 34, 344, 33, 7];
+
+let p = pricelist.lastIndexOf(33); // return the index from lasr element
+console.log(p);
+
+let q = pricelist.lastIndexOf(2345); // return -1 if the value is not present
+console.log(q);
+
+// let alpha = ["D", "B", "C", "D", "w", "r"];
+
+// console.log(alpha.lastIndexOf("D", 2));
+
+// Method 10 -- indexof() -  returns the first index of occurence of an array element
+// or -1 if it is not found
+
+
+let alpha = ["D", "B", "C", "D", "w", "r"];
+
+let sa = alpha.indexOf("r");
+console.log(sa);
+
+// Method 11 -- slice() - return a shallow copy of a portion of an array into a new array object
+
+
+let newarray = [2, 3, 4, 5, 6, 7];
+let newArray = newarray.slice(3, 6);
+console.log(newArray);
