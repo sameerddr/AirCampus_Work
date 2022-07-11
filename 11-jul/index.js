@@ -39,5 +39,3 @@ function triangular_series(n) {
     }
 }
 triangular_series(5);
-
-// Q3
