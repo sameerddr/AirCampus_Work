@@ -209,3 +209,10 @@ let summation = numberss.reduce(
 );
 
 console.log(summation);
+
+// Method 15 -- The sort() method sorts the items of an array in a specific order (ascending or descending).
+
+var names = ["Adam", "Jeffrey", "Fabiano", "Danil", "Ben"];
+
+// returns the sorted array
+console.log(names.sort());
