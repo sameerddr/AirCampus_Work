@@ -180,6 +180,32 @@ function square(num) {
 let new_numbers = numbers.map(square);
 console.log(new_numbers);
 
+
+
+
+// Method 13 - The filter() method returns a new array with all elements that pass the test defined by the given function.
 const prices = [1800, 2000, null, 3000, 5000, "Thousand", 500, 8000];
-let newPrices = prices.filter((price) => (price > 2000 && !Number.isNaN(price)));
+let newPrices = prices.filter((price) => (price > 2000));
+// && !Number.isNaN(price)
 console.log(newPrices); // [ 3000, 5000, 8000 ]
+
+// -----
+const languages = ['Panner Fried Rice', 'Chicken Biryani', 'Paneer Paratha', 'Cold Coffee', 'Paneer Roll'];
+
+function searchFor(arr, query) {
+    function condition(element) {
+        return element.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+    }
+    return arr.filter(condition);
+}
+
+let newArr = searchFor(languages, "t");
+console.log(newArr);
+
+// Mehthod 14 -- The reduce() method executes a reducer function on each element of the array and returns a single output value.
+const numberss = [1, 2, 3, 4, 5, 6];
+let summation = numberss.reduce(
+    (accumulator, currentValue) => accumulator + currentValue
+);
+
+console.log(summation);
