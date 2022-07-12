@@ -216,3 +216,6 @@ var names = ["Adam", "Jeffrey", "Fabiano", "Danil", "Ben"];
 
 // returns the sorted array
 console.log(names.sort());
+console.log(names); //  It Change the values original array
+
+// ------------
