@@ -219,3 +219,55 @@ console.log(names.sort());
 console.log(names); //  It Change the values original array
 
 // ------------
+var priceList = [1000, 50, 2, 7, 14];
+priceList.sort(function(a, b) {
+    return a - b;
+});
+
+// Output: Ascending - 2,7,14,50,1000
+console.log("Ascending - " + priceList);
+priceList.sort((a, b) => b - a);
+
+// Output: Descending - 1000,50,14,7,2
+console.log("Descending - " + priceList);
+
+// Method 16 -- The some() method tests whether any of the array elements pass the given test function.
+
+let ageArray = [34, 23, 20, 26, 12];
+
+function checkMinor(age) {
+    return age < 18;
+}
+// checks whether ageArray contains any element that is less than 18
+let check = ageArray.some(checkMinor);
+
+console.log(check);
+
+let scoreObtained = [45, 50, 39, 78, 65, 20];
+
+// a test function: returns score less than 40
+function studentIsPassed(score) {
+    return score > 40;
+}
+
+// checks if score of at least one student is less than 40  
+if (scoreObtained.some(studentIsPassed) == true) {
+    console.log("At least one of the students failed.");
+} else
+    console.log("All students are passed.");
+
+// Method 17 -- The join() method returns a new string by concatenating all of the elements in an array, separated by a specified separator.
+
+let message = ["JavaScript", "is", "fun."];
+
+// join all elements of array using space
+let joinedMessage = message.join(" ");
+console.log(joinedMessage);
+
+var collection = [3, ".", 1, 4, 1, 5, 9, 2];
+console.log(collection.join("")); // 3.141592
+
+// Mehtod 18 -- The JavaScript Array every() method checks if all the array elements pass the given test function.
+let age = [34, 23, 20, 26, 12];
+let check1 = ageArray.every(age => age >= 18); // false
+console.log(check1);
