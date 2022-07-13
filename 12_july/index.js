@@ -271,3 +271,22 @@ console.log(collection.join("")); // 3.141592
 let age = [34, 23, 20, 26, 12];
 let check1 = ageArray.every(age => age >= 18); // false
 console.log(check1);
+
+
+let array1 = [1, 2, 3];
+let array2 = [7, 8, 9];
+let array3 = [];
+// let result = [...array1,array2];
+
+for (let i = 0; i < array1.length; i++) {
+
+    // console.log(array1[i]);
+    array3 = array1[i];
+    console.log(array3);
+}
+// console.log(result);
+
+for (let j = 0; j < array2.length; j++) {
+    array4 = array2[j];
+    console.log(array4);
+}
