@@ -73,25 +73,56 @@
 
 
 
+//  Not what we are doing in this program
+
+// let matrix = [
+//     [1, 2, 3, 4],
+//     [5, 6, 7, 8],
+//     [9, 10, 11, 12],
+//     [13, 14, 15, 16]
+// ]
+
+// let rows = matrix.length;
+// let columns = matrix[0].length - 1;
+
+// let sum = 0;
+
+
+// for (let i = 0; i < rows; i++) {
+//     sum -= matrix[i][columns];
+// }
+// console.log(sum);
 
 
 
 
+// whenever my i is odd i am printing from right to left and is even left to right
 
 
 
+let matrix = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+    [13, 14, 15, 16]
+]
+
+let rows = matrix.length;
+let columns = matrix[0].length;
 
 
+for (let i = 0; i < rows; i++) {
+    for (let j = 0; j < columns; j++) {
+        if (i % 2 == 0) {
+            console.log(matrix[i][j]);
+        } else {
+            for (let j = columns - 1; j >= 0; j--) {
+                console.log(matrix[i][j]);
 
-
-
-
-
-
-
-
-
-
+            }
+        }
+    }
+}
 
 
 
