@@ -45,7 +45,18 @@ let sum = 0;
 // console.log(sum);
 
 // 2 method - using single loops
+// for (let i = 0; i < rows; i++) {
+//     sum += matrix[i][i];
+// }
+// console.log(sum);
+
+// program to find the program to sum the single columns
+
+let start = 1;
+
 for (let i = 0; i < rows; i++) {
-    sum += matrix[i][i];
+
+    sum += matrix[i][start];
+
 }
 console.log(sum);
