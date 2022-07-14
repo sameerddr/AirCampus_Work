@@ -31,3 +31,52 @@ console.log(message1);
 
 let z = 'hello';
 console.log(z.length); // 5
+
+// Method 1 --The replace() method returns a new string with the specified string replaced.
+
+//  type 1 --Replace the first occurrence
+
+let text = "Java is awesome. Java is fun."
+let results = text.replace("Java", "C");
+console.log(results);
+
+
+// type 2 --Replace all occurrences
+
+let res = text.replace(/Java/g, "J");
+console.log(res);
+
+// type 3 --Case-Insensitive Replacement
+
+let re = text.replace(/java/gi, "J");
+console.log(re);
+
+// Mehtod 2 --The split() method divides a string into a list of substrings and returns them as an array.
+// Note: The split() method does not change the original string.
+
+let alpha = "ABCDE";
+let a = alpha.split("");
+console.log(a);
+
+let textt = "Java is awesome. Java is fun.";
+let aa = textt.split(".");
+console.log(aa);
+
+let bb = textt.split("a");
+console.log(bb); // why a is is removed from a answer
+
+
+// Method 3 -- The trim() method removes whitespace from both ends of a string.
+const message = "   JAVASCRIPT IS FUN    ";
+
+const newMessage = message.trim();
+console.log(newMessage);
+
+let str = "   foo  ";
+console.log(str.trim());
+
+// Method 4 -- The slice() method extracts and returns a section of a string.
+
+let strr = "JavaScript is a very absurd programming language.";
+console.log(str.slice(28)); // 'programming language.'
+console.log(str.slice(4, 15)); // 'Script is a'
