@@ -115,3 +115,11 @@ console.log(substr3);
 // same as string.substring(0)
 substr4 = string.substring(-44, 90);
 console.log(substr4); // Programiz JavaScript Tutorials
+
+
+// Spread Operator -- for  copying the array 
+
+let array = [1, 2, 3, 4];
+// let newarray = [arrray]  it will print entire array 
+let newarr = [...array]; // if we change the value of any element then the value of original element will not change
+console.log(newarr);
