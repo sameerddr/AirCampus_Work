@@ -78,5 +78,40 @@ console.log(str.trim());
 // Method 4 -- The slice() method extracts and returns a section of a string.
 
 let strr = "JavaScript is a very absurd programming language.";
-console.log(str.slice(28)); // 'programming language.'
-console.log(str.slice(4, 15)); // 'Script is a'
+console.log(strr.slice(28)); // 'programming language.'
+console.log(strr.slice(4, 15)); // 'Script is a'
+
+// Method 5 -- The toUpperCase() method returns the string converted to uppercase.
+
+let strrrs = "Hello World!";
+let sentence = "Java is to JavaScript what Car is to Carpet.";
+
+let uppercase_str = strrrs.toUpperCase();
+console.log(uppercase_str); // HELLO WORLD!
+
+let uppercase = sentence.toUpperCase();
+console.log(uppercase); // JAVA IS TO JAVASCRIPT WHAT CAR IS TO CARPET.
+
+
+// Method 6 -- The toLowerCase() method returns the string converted to lowercase.
+
+let c = "Hello World!";
+let d = "Java is to JavaScript what Car is to Carpet.";
+
+let lowercase_str = c.toLowerCase();
+console.log(lowercase_str); // hello world!
+
+let lowercase = d.toLowerCase();
+console.log(lowercase); // java is to javascript what car is to carpet.
+
+// Method 7 --The substring() method returns a specified part of the string between start and end indexes.
+
+let string = "Programiz JavaScript Tutorials";
+substr1 = string.substring(0, 1);
+console.log(substr1);
+substr3 = string.substring(10);
+console.log(substr3);
+
+// same as string.substring(0)
+substr4 = string.substring(-44, 90);
+console.log(substr4); // Programiz JavaScript Tutorials
