@@ -1,4 +1,4 @@
- // anagrams
+ // anagrams in js
  // ex - silent = listen , triangle = integral
 
  let a = "god";
