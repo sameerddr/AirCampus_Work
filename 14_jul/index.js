@@ -9,9 +9,16 @@ const result = `The names are ${name} and ${name1}`; //Backticks are generally u
 
 // JavaScript Strings are immutable -- That means the characters of a string cannot be changed. For example,
 
-// let a = 'hello';
+let aaa = 'hello';
+
+let bbb = [...aaa];
+
+bbb[0] = 'c';
+console.log(bbb);
+// console.log(typeof(bbb));
 // a[0] = 'H';
 // console.log(a);
+
 
 // JavaScript is Case-Sensitive
 // let a = 'a';
@@ -21,7 +28,7 @@ const result = `The names are ${name} and ${name1}`; //Backticks are generally u
 
 // JavaScript Multiline Strings -- To use a multiline string, you can either use the + operator. For example,
 
-// using the + operator
+// using the  operator
 const message1 = 'This is a long message ' +
     'that spans across multiple lines' +
     'in the code.'
@@ -117,9 +124,25 @@ substr4 = string.substring(-44, 90);
 console.log(substr4); // Programiz JavaScript Tutorials
 
 
+
 // Spread Operator -- for  copying the array 
 
 let array = [1, 2, 3, 4];
 // let newarray = [arrray]  it will print entire array 
 let newarr = [...array]; // if we change the value of any element then the value of original element will not change
 console.log(newarr);
+
+let araay1 = [11, 22, 33];
+let array2 = [44, 55, 66];
+
+let resul = [];
+
+for (let i = 0; i < araay1.length; i++) {
+    resul[i] = araay1[i];
+}
+
+for (let i = 0; i < array2.length; i++) {
+    resul[resul.length] = array2[i];
+
+}
+console.log(resul);
