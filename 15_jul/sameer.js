@@ -19,23 +19,23 @@
  function anagram(str1, str2) {
      let n1 = str1.length;
      let n2 = str2.length;
-     if (n1 != n2) /// If length of both strings is not
-     // same, then they cannot be anagram
+     if (n1 != n2) /// If length of both strings is notsame,they cannot be anagram
          return false;
-     str1.sort();
-     str2.sort()
+     str1.split("").sort().join("");
+     str2.split("").sort().join("");
 
-     //  for (const str1 of str1) {
-     //      console.log(str1);
-     //  }
-     for (let i = 0; i < n1; i++)
-         if (str1[i] != str2[i]) {
+     for (let i = 0; i < n1; i++) {
+         if (str1[i] == str2[i]) {
+             return true;
+         } else {
+
              return false;
          }
+     }
 
-     return true;
+
  }
- console.log(anagram("sameer", "reemas"));
+ console.log(anagram("sameer", "meersa"));
 
  // anagram
  // for of
