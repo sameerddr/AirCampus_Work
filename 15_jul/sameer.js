@@ -37,8 +37,24 @@
  }
  console.log(anagram("sameer", "meersa"));
 
- // anagram
- // for of
- // clourse
- // 
- //
+ // for of -- The for...of loop was introduced in the later versions of JavaScript ES6.
+
+ //  for..of loop in JavaScript allows you to iterate over iterable objects(arrays, sets, maps, strings etc).
+
+ //  The syntax of the for...of loop is:
+
+ // for (element of iterable) {
+ //     // body of for...of
+ // }
+
+ const students = ['John', 'Sara', 'Jack'];
+ for (let element of students) {
+     console.log(element);
+ }
+
+ let aa = "code";
+ for (let element of aa) {
+     console.log(element);
+     element[0] = "s";
+     console.log(element);
+ }
