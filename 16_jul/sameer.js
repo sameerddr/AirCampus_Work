@@ -16,3 +16,5 @@ console.log(prime_numbers);
 
 // Output: [ 9 ]
 //         [ 2, 3, 5, 7, 13, 11 ]
+
+// The some() method tests whether any of the array elements pass the given test function.
