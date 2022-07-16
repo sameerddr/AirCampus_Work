@@ -18,3 +18,28 @@ console.log(prime_numbers);
 //         [ 2, 3, 5, 7, 13, 11 ]
 
 // The some() method tests whether any of the array elements pass the given test function.
+// a test function: returns an even number
+function isEven(element) {
+    return element % 2 === 0;
+}
+
+// defining an array
+let number = [1, 3, 2, 5, 4];
+
+// checks whether the numbers array contain at least one even number
+console.log(number.some(isEven));
+
+// Output: true
+// ------
+let languages = ["JavaScript", "Java", "C"];
+
+// checking whether the array contains 'Java'
+let check = languages.includes("Java");
+
+console.log(check);
+
+// Output: true
+
+// ---
+
+// The from() method creates a new array from any array - like or iterable object.
