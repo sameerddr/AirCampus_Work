@@ -28,5 +28,5 @@ checkStringsAnagram("indian", "ndiani")
 
 
 
-var str = "Hello and Welcome to Linux Hint!";
-console.log(str.match('Welcome'));
+var str = "Hello and  to Linux Hint!";
+console.log(str.match('Welcome').length());
