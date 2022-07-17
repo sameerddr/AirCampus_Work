@@ -24,3 +24,9 @@ function checkStringsAnagram(a, b) {
     }
 }
 checkStringsAnagram("indian", "ndiani")
+
+
+
+
+var str = "Hello and Welcome to Linux Hint!";
+console.log(str.match('Welcome'));
