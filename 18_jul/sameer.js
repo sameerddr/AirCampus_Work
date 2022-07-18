@@ -1,5 +1,4 @@
 // Linear Search 
-// let arr = arr[];
 
 function linear_search(arr, key) {
 
