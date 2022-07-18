@@ -27,4 +27,6 @@ function binary_search(arr, key) {
     } else if (arr[mid] > key) {
         e = mid - 1;
     }
+    return -1;
 }
+console.log(binary_search([11, 22, 33, 44, 55, 66], 66));
