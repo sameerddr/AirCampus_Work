@@ -102,3 +102,23 @@ console.log(booksLib.title);
 //  constructor Fuction
 // PascalCase
 // To create an object from a constructor function, we use the new keyword.
+// this kewword -- it piont to function properties
+// new keyword -- point krta hai this keyword empty object kae upparko or return kra deta hai uski values
+// quest -- did we use th return here
+function Virat(position) {
+    this.position = 3,
+        this.runs = function() {
+            return ("23,693 runs in all format , King");
+        }
+        // return this;  replacing this  line to new keyword
+}
+const c = new Virat(3);
+console.log(c);
+console.log(c.position);
+console.log(c.runs());
+
+
+// delete keyword is used to delete the property
+
+delete c.position;
+console.log(c);
