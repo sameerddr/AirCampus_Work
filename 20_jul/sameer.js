@@ -21,11 +21,24 @@ let x = function(num) {
 }
 console.log(x(2));
 
-let aa = 3;
+// let aa = 3;
 
 
-function add() {
-    bb = 2;
-    return aa + bb;
+// function add() {
+//     bb = 2;
+//     return aa + bb;
+// }
+// console.log(add())
+
+// arrow function 
+
+let xx = function(num) {
+    return num * num;
 }
-console.log(add())
+console.log(xx(12));
+
+let yy = (num) => num * num;
+console.log(yy(12));
+
+let sum = ((x, y) => x + y);
+console.log(sum(2, 3));
