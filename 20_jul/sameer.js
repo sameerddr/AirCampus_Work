@@ -31,6 +31,9 @@ console.log(x(2));
 // console.log(add())
 
 // arrow function 
+// 1- Not Compulsory To Use The Return 
+// 2- No Need of function Keyword
+// 3- If there are Only One Variable no need to use "{}" brackets
 
 let xx = function(num) {
     return num * num;
@@ -42,3 +45,5 @@ console.log(yy(12));
 
 let sum = ((x, y) => x + y);
 console.log(sum(2, 3));
+
+let vote = (age < 18)
