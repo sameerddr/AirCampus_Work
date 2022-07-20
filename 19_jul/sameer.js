@@ -19,23 +19,23 @@ console.log(course.lecture);
 
 
 // ---- Example -2
-// const courses = {
-//     lecture: 100,
-//     section: 200,
-//     title: "web devlopment",
-//     notes: {
-//         introduction: "welcome to the coding world "
-//     },
-//     enroll() {
-//         console.log("Succesfully enroled ");
-//     }
-// }
+const courses = {
+    lecture: 100,
+    section: 200,
+    title: "web devlopment",
+    notes: {
+        introduction: "welcome to the coding world "
+    },
+    enroll() {
+        console.log("Succesfully enroled ");
+    }
+}
 
-// console.log(courses); // In this the function defination is not working
-// console.log(courses.notes);
-// courses.enroll();
-// courses.fees = 1000 // we can also assign the values outside the function(Dyanamic Nature)
-// console.log(courses);
+console.log(courses); // In this the function defination is not working
+console.log(courses.notes);
+courses.enroll();
+courses.fees = 1000 // we can also assign the values outside the function(Dyanamic Nature)
+console.log(courses);
 
 // Factory Function --A factory function can be defined as a function that creates an object and returns it.
 
