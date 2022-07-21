@@ -39,3 +39,20 @@ const exp = /programming/;
 // check if exp is present in message
 let result = message.match(exp);
 console.log(result);
+
+var x = 2;
+console.log(x);
+// let x = 3;
+// console.log(x);
+var x = 3;
+var x = 4;
+console.log(x);
+
+var obj = {
+    name: "vivek",
+    getName: function() {
+        console.log(this.name);
+    }
+}
+
+obj.getName();
