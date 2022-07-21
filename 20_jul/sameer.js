@@ -35,6 +35,8 @@ console.log(x(2));
 // 2- No Need of function Keyword
 // 3- If there are Only One Variable no need to use "{}" brackets
 
+
+
 let xx = function(num) {
     return num * num;
 }
@@ -47,3 +49,12 @@ let sum = ((x, y) => x + y);
 console.log(sum(2, 3));
 
 let vote = (age < 18)
+
+// // IIFE (Imeediately Invoked Function Expression) - It automatically called the function & if you want to make your variable private You can use it !
+// Syntax -
+//     (function() {
+//         // Code Which You Want To Right
+//     })();
+
+
+
