@@ -28,4 +28,6 @@ function add() {
     let b = 2;
     return console.log(a + b);
 }
-add();
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+let yes = words.filter(wo => wo.length > 6);
+console.log(yes);
