@@ -26,4 +26,3 @@ function change_elements(arr, pos, ele) {
     return arr
 }
 console.log(change_elements(arr, pos, ele))
-exports.change_elements = change_elements
