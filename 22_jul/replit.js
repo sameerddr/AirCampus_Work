@@ -1,3 +1,5 @@
+// replit
+
 let myArr = [1, 5, 7, 8]
 
 function count_all_divisions(arr) {
