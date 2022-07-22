@@ -26,3 +26,25 @@ function change_elements(arr, pos, ele) {
     return arr
 }
 console.log(change_elements(arr, pos, ele))
+
+let newarr = [2, 'ADD_BEG', 3, 'ADD_BEG', 'REM_BEG', 4, 'ADD_END']
+
+function operations(arr) {
+    let myarr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == 'ADD_BEG') {
+            myarr.unshift(arr[i - 1])
+        }
+        if (arr[i] == 'REM_BEG') {
+            myarr.shift()
+        }
+        if (arr[i] == 'ADD_END') {
+            myarr.push(arr[i - 1])
+        }
+        if (arr[i] == 'REM_END') {
+            myarr.pop()
+        }
+    }
+    return myarr
+}
+console.log(operations(newarr))
