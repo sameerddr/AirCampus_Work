@@ -49,3 +49,32 @@ let fun2 = () => {
         console.log(arguments);
     }
     // fun2(1, 23, 4);
+
+let user = {
+    username: "sameer",
+    r1: () => {
+        console.log("this is username" + this.username);
+    },
+    r2() {
+        console.log("this is normal" + this.username);
+    }
+
+}
+user.r1();
+user.r2();
+
+const sameer2 = {
+    name: "virat",
+    age: 31
+}
+sameer2.name = "dhoni";
+delete sameer2.age;
+console.log(sameer2);
+console.log(sameer2.name);
+
+const fun3 = (function(a) {
+    delete a;
+    return a;
+})(5);
+
+console.log(fun3);
