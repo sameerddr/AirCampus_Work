@@ -37,3 +37,15 @@ greet('Peter', callMe());
 
 
 // callback Function
+
+// arrow function properties
+
+function fun() {
+    console.log(arguments);
+}
+fun(1, 2, 3);
+
+let fun2 = () => {
+        console.log(arguments);
+    }
+    // fun2(1, 23, 4);
