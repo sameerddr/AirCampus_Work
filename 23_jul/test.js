@@ -124,6 +124,7 @@ console.log(person);
 // console.log(person);
 
 
+
 let copy2 = JSON.parse((JSON.stringify(person)));
 
 copy2.name2 = "sachimn";
@@ -131,5 +132,17 @@ console.log(person);
 console.log(copy2);
 
 let arr1 = [1, 2, 3, 4, 5, 6];
-let arrr = [...arr1];
-console.log(arrr);
+// let arrr = [...arr1];
+// console.log(arrr);
+
+
+// delete arrr[0];
+// console.log(arrr);
+// console.log(arr1);
+// arrr[0];
+for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] == 4) {
+        delete arr1[i];
+    }
+}
+console.log(arr1);
