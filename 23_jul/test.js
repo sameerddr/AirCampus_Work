@@ -129,4 +129,3 @@ let copy2 = JSON.parse((JSON.stringify(person)));
 copy2.name2 = "sachimn";
 console.log(person);
 console.log(copy2);
-x
