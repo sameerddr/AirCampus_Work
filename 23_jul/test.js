@@ -78,3 +78,55 @@ const fun3 = (function(a) {
 })(5);
 
 console.log(fun3);
+const sameer3 = {
+    name: "virat",
+    age: 31,
+    "liked this video": true
+}
+console.log(
+    ["liked this video"]);
+
+const obj = {
+    nam: "yes",
+    age: 12
+}
+
+for (key in obj) {
+    console.log(key);
+    console.log(obj[key]);
+}
+
+const users = {
+    name: "piyush",
+    age: 3265
+}
+
+// console.log(JSON.stringify(users));
+let aa = JSON.stringify(users);
+console.log(JSON.stringify);
+
+// refrencing object
+
+
+
+// deep copy vs shallow copy
+
+let person = {
+    name2: "sameer",
+    age: 34
+}
+console.log(person);
+
+// let copy = person;
+
+// copy.name2 = "honey";
+// console.log(copy);
+// console.log(person);
+
+
+let copy2 = JSON.parse((JSON.stringify(person)));
+
+copy2.name2 = "sachimn";
+console.log(person);
+console.log(copy2);
+x
