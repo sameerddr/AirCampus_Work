@@ -166,3 +166,35 @@ function binary_search(arr, key) {
     return -1;
 }
 console.log(binary_search([11, 22, 33, 44, 55, 66], 66));
+
+let x = [1, 3, 4, 5, 6, 2]
+
+
+let xx = ["sda", "e", "fwefw"]
+    // let yy = (...xx);
+console.log(xx);
+
+function sum(...x) {
+    let sum = 0;
+    for (let i of x) {
+        sum += i;
+
+    }
+    return sum
+}
+console.log(sum(1, 2, 3, 3, 44, 5));
+
+console.log("starting");
+setTimeout(() => {
+    console.log("checking");
+}, 10000);
+console.log("ending");
+
+
+let w = [1, 2, 3, 4, ];
+
+let map = w.map((num) => {
+    return num * 3
+});
+
+console.log(map);
