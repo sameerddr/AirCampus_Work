@@ -37,3 +37,25 @@ function shopping(obj) {
 console.log(shopping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }))
 console.log(shopping({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 }))
 exports.shopping = shopping
+
+function freeDelivery(obj) {
+
+    let sum = 0;
+    // var results = [];
+    for (var property in obj)
+    // results.push(obj[property]);
+    // console.log(results) ;
+
+        sum = sum + (obj[property]);
+    if (sum > 50) {
+        return true
+    } else {
+        return false
+    }
+
+
+
+
+}
+console.log(freeDelivery({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }))
+exports.freeDelivery = freeDelivery
