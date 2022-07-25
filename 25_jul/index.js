@@ -15,3 +15,15 @@ console.log(sorting([
 ]));
 
 exports.sorting = sorting
+
+function keyValue(obj) {
+    let res = []
+    let a = (Object.keys(obj));
+    let b = (Object.values(obj));
+    // return a.push(res);
+    res.push(a);
+    res.push(b);
+    return (res)
+}
+console.log(keyValue({ key1: true, key2: false, key3: undefined }))
+exports.keyValue = keyValue
