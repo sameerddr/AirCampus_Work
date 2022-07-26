@@ -34,3 +34,18 @@ console.log(sel);
 // 2. Mutli  element Slector
 
 // getElementByClass
+
+let elems = document.getElementsByClassName("child");
+console.log(elems);
+let elem = document.getElementsByClassName("container");
+elem = document.getElementsByClassName("container");
+console.log(elem[0].getElementsByClassName("child"));
+
+let div = document.getElementsByTagName("div");
+console.log(div);
+
+for (let index = 0; index < div.length; index++) {
+    const element = div[index];
+    console.log(element);
+    element.style.color = "yellow";
+}
