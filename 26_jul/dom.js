@@ -44,8 +44,18 @@ console.log(elem[0].getElementsByClassName("child"));
 let div = document.getElementsByTagName("div");
 console.log(div);
 
-for (let index = 0; index < div.length; index++) {
-    const element = div[index];
+for (let i = 0; i < div.length; i++) {
+    const element = div[i];
     console.log(element);
+    // console.log(div[i]);
     element.style.color = "yellow";
 }
+
+
+// -------------------
+
+let cont = document.querySelector("div");
+cont = document.querySelector(".container")
+console.log(cont);
+// console.log(cont.childNodes); // will include text and comments
+console.log(cont.children); // will not include text and comments
