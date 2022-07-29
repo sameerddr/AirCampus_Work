@@ -1,0 +1,61 @@
+function sorting(obj) {
+    // let sorts = [];
+    // for(property in obj){
+    //   sorts.push((obj[property]));
+    // }
+    // console.log(sort)
+
+    obj.sort((a, b) => a.price - b.price)
+    return obj;
+
+}
+console.log(sorting([
+    { name: "lemonade", price: 50 },
+    { name: "lime", price: 10 }
+]));
+
+exports.sorting = sorting
+
+function keyValue(obj) {
+    let res = []
+    let a = (Object.keys(obj));
+    let b = (Object.values(obj));
+    // return a.push(res);
+    res.push(a);
+    res.push(b);
+    return (res)
+}
+console.log(keyValue({ key1: true, key2: false, key3: undefined }))
+exports.keyValue = keyValue
+
+
+function shopping(obj) {
+
+    return (Object.keys(obj));
+
+}
+console.log(shopping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }))
+console.log(shopping({ "Monopoly": 11.99, "Secret Hitler": 35.99, "Bananagrams": 13.99 }))
+exports.shopping = shopping
+
+function freeDelivery(obj) {
+
+    let sum = 0;
+    // var results = [];
+    for (var property in obj)
+    // results.push(obj[property]);
+    // console.log(results) ;
+
+        sum = sum + (obj[property]);
+    if (sum > 50) {
+        return true
+    } else {
+        return false
+    }
+
+
+
+
+}
+console.log(freeDelivery({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }))
+exports.freeDelivery = freeDelivery
