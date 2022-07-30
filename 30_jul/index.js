@@ -33,9 +33,9 @@ function bubbleSort(arr) {
 var arr = [243, 45, 23, 356, 3, 5346, 35, 5];
 
 
-// --------------------
 // calling the bubbleSort Function
 bubbleSort(arr)
+    // --------------------
 
 function selectionSort(inputArr) {
     let n = inputArr.length;
