@@ -55,3 +55,7 @@ function selectionSort(inputArr) {
     }
     return inputArr;
 }
+
+let inputArr = [5, 2, 4, 6, 1, 3];
+selectionSort(inputArr);
+console.log(inputArr);
