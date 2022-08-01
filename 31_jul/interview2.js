@@ -94,16 +94,31 @@ function student(fname, lname) {
 let st = new student("sameeer", "varshney");
 console.log(st);
 
-// -
 
-function sum(...input) {
 
-    // console.log(...input); 
+// // -
+// function sum(...input) {
 
-    let total = 0;
-    for (var prop of input) {
-        total += prop;
-    }
-    console.log(total);
-}
-sum(1, 2, 3, 45, 4);
+//     // console.log(...input); 
+
+//     let total = 0;
+//     for (var prop of input) {
+//         total += prop;
+//     }
+//     console.log(total);
+// }
+// sum(15, 25, 35, 45, 45);
+
+console.log("1" + 1);
+console.log("A" - 1);
+console.log(2 + "2" + "2");
+console.log("helol" + "world" + 78);
+console.log("world" + "78");
+
+let a = 0;
+let b = false;
+
+console.log((a == b));
+console.log((a === b));
+
+console.log(console.log(console.log(console.log("sameer"))));
