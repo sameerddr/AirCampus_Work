@@ -10,6 +10,7 @@ let listItem1 = document.createElement("li");
 
 let listItem2 = document.createElement("li");
 // Then we can use the  textContent property to add the text for our list items.
+// Then we can use the  textContent property to add the text for our list items.
 
 listItem1 = document.createElement("li");
 listItem1.textContent = "It's free";
