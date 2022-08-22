@@ -79,3 +79,5 @@ const morethan2 = num.myFilter((num, i) => {
     return num > 2;
 });
 console.log(morethan2);
+
+// pollyfill of reduce
