@@ -78,6 +78,33 @@ const num = [1, 2, 3, 4, 5, 6, 7, 8];
 const morethan2 = num.myFilter((num, i) => {
     return num > 2;
 });
+
 console.log(morethan2);
 
 // pollyfill of reduce
+
+
+
+
+
+
+
+
+
+
+
+// Q1--  map vs foreach 
+
+const arr = [1, 2, 3, 4, 54, 56, 6, 7];
+
+const mapresult = arr.map((arr) => {
+    return arr + 2;
+});
+// console.log(mapresult);
+
+const foreachresult = arr.forEach((arr, i) => {
+    arr[i] = arr + 10;
+    // foreach will modifiy the original array
+});
+
+console.log(foreachresult, arr);
