@@ -59,4 +59,4 @@ const you2 = {
 
 }
 
-feature.call(you2, [2, 9346547587, "aligarh"]);
+// feature.call(you2, [2, 9346547587, "aligarh"]);
