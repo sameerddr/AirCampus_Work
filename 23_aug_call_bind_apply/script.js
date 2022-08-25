@@ -56,7 +56,5 @@ const you = {
 const you2 = {
     name: "akss",
     content: "progrsaming",
-
 }
-
 feature.call(you2, [2, 9346547587, "aligarh"]);
