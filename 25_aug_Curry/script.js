@@ -3,8 +3,7 @@
 
 // OR
 
-// A function takes one argument at a time and return a new function expecting the next argument , then we will crete a new function which will take us another argument
-
+// A function takes one argument at a time and return a new function expecting the next argument,then we will crete a new function which will take us another argument
 
 // NOTE- THE NUMBER OF ARGUMNETS A FUNCTION TAKES IS ALSO CALLED ARITY.
 //  here a , b is arity
@@ -16,23 +15,27 @@
 
 // Q1 --  sum(2)(6)(3)
 
-function summ(a, b, c) {
-    return a + b + c;
-}
-console.log(summ(2, 6, 3));
+// function summ(a, b, c) {
+//     return a + b + c;
+// }
+// console.log(summ(2, 6, 3));
 
 // or USING CURRY
 
 
-function sum(a) {
-    return function(b) {
-        return function(c) {
-            return a + b + c;
-        }
-    }
-}
+// function sum(a) {
+//     return function(b) {
+//         return function(c) {
+//             return function(d) {
+//                 return function(e) {
+//                     return a + b + c + d + e;
+//                 }
+//             }
+//         }
+//     }
+// }
 
-console.log(sum(2)(6)(3));
+// console.log(sum(2)(6)(3));
 // console.log(sum(2)(6));
 // console.log(sum(2));
 
@@ -44,19 +47,21 @@ console.log(sum(2)(6)(3));
 // evaluate("sub")(4)(2) => 2
 // evaluate("divide")(4)(2) => 2
 
-function evalute(operation) {
-    return function(a) {
-        return function(b) {
-            if (operation === "sum") return a + b;
-            else if (operation === "mul") return a * b;
-            else if (operation === "divide") return a / b;
-            else if (operation === "sub") return a - b;
-            else return "Invalid Opertion";
-        }
-    }
-}
+// function evalute(operation) {
+//     return function(a) {
+//         return function(b) {
+//             if (operation === "sum") return a + b;
+//             else if (operation === "mul") return a * b;
+//             else if (operation === "divide") return a / b;
+//             else if (operation === "sub") return a - b;
+//             else return "Tu Nikal ";
+//         }
+//     }
+// }
 
-console.log(evalute("sum")(4)(2));
+
+
+// console.log(evalute("sum")(4)(2));
 
 
 //Q3 -- Infinite Currying -> sum(1)(2)(3).....(n)
@@ -68,5 +73,5 @@ function add(a) {
         return a;
     };
 }
-console.log(add(2)(3)(4)());
-console.log(add(2)(3)(4)(2));
+console.log(add(2)(3)(4)()); // 9
+console.log(add(2)(3)(4)(2)); // 11
