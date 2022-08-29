@@ -1,11 +1,10 @@
 // Currrying --  Currying is a process in functional programming  in which we can transform a function with multiple arguments into a sequence of nesting function . It returns a new function that excepts the next argument inline .
-
-
 // OR
 
 // A function takes one argument at a time and return a new function expecting the next argument,then we will crete a new function which will take us another argument
 
 // NOTE- THE NUMBER OF ARGUMNETS A FUNCTION TAKES IS ALSO CALLED ARITY.
+
 //  here a , b is arity
 // function mul(a,b) {
 //     // code 
