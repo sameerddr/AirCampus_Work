@@ -60,7 +60,7 @@
 
 
 
-console.log(evalute("sum")(4)(2));
+// console.log(evalute("sum")(4)(2));
 
 
 //Q3 -- Infinite Currying -> sum(1)(2)(3).....(n)
