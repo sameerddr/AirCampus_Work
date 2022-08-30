@@ -1,4 +1,6 @@
 body {
+    padding: 0;
+    margin: 0;
     background-color: brown;
 }
 
@@ -10,26 +12,43 @@ body {
     border: 2px solid blue;
 }
 
-@media (max-width:300px) {
+@media (min-width:1200px) {
     .box1 {
         background-color: red;
+        width: 1200px;
+        height: 1200px;
     }
 }
 
-@media (max-width:500px) {
-    .box2 {
+@media (min-width:1024px) and (max-width:1199px) {
+    .box1 {
         background-color: rgb(255, 255, 255);
+        width: 1024px;
+        height: 1024px;
     }
 }
 
-@media (max-width:600px) {
-    .box3 {
+@media (min-width:768px) and (max-width:1023px) {
+    .box1 {
         background-color: rgb(0, 0, 0);
+        min-width: 768px;
+        max-width: 1023px;
+        height: 768px;
     }
 }
 
-@media (max-width:800px) {
-    .box4 {
+@media(min-width:480px) and (max-width:767px) {
+    .box1 {
         background-color: royalblue;
+        width: 480px;
+        height: 480px;
+    }
+}
+
+@media(min-width:320px) and (max-width:480px) {
+    .box1 {
+        background-color: rgb(225, 65, 212);
+        width: 320px;
+        height: 320px;
     }
 }
