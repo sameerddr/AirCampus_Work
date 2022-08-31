@@ -78,7 +78,7 @@ img:hover {
 p:hover {
     background-color: brown;
     color: white;
-    /* transform: skew(45deg); */
+    transform: skew(45deg);
 }
 
 h1:hover {
