@@ -28,24 +28,33 @@
 // }
 // addition(5, 5, display);
 
-const students = [
-    { name: "harry", subject: "mathss" },
-    { name: "sameer", subject: "coding" },
-]
 
-function enrollStudents(student, callback) {
-    setTimeout(() => {
-        students.push(student);
-        console.log('students has been inserted');
-    }, 1000);
-}
 
-function getstudents() {
-    // setTimeout(() => {
-    let str = " ";
-    students.forEach(function(student) {
-        str += `<li>${student.name}</li> `
-    })
+// ------seprate program--------------
 
-    // }, 5000);
-}
+// const students = [
+//     { name: "harry", subject: "mathss" },
+//     { name: "sameer", subject: "coding" },
+// ]
+
+// function enrollStudents(student, callback) {
+//     setTimeout(() => {
+//         students.push(student);
+//         console.log('students has been inserted');
+//     }, 1000);
+// }
+
+// function getstudents() {
+//     setTimeout(() => {
+//         let str = " ";
+//         students.forEach(function(student) {
+//             str += `<li>${student.name}</li> `
+//         })
+//     }, 5000);
+// }
+
+// async function func() {
+//     console.log("Async Wait tutorial");
+//     return Promise.resolve(1);
+// }
+// func();
