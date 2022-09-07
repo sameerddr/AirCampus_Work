@@ -58,5 +58,3 @@
 //     return Promise.resolve(1);
 // }
 // func();
-
-// ----
