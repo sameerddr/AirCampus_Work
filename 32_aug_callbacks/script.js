@@ -57,4 +57,4 @@
 //     console.log("Async Wait tutorial");
 //     return Promise.resolve(1);
 // }
-// func();
+func();
