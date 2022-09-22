@@ -24,6 +24,7 @@
 // console.log(twoSum([2, 7, 11, 15], 18));
 
 // ---------------------------------------------------------------------------------
+// Triplets
 var countGoodTriplets = function (arr, a, b, c) {
   let count = 0;
   let n = arr.length;
