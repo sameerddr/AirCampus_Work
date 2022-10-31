@@ -7,7 +7,7 @@
 
 //  here a , b is arity
 // function mul(a,b) {
-//     // code 
+//     // code
 // }
 
 // So, currying break down a function that takes multiple arguments into a series of function that each take only one arguments
@@ -20,7 +20,6 @@
 // console.log(summ(2, 6, 3));
 
 // or USING CURRY
-
 
 // function sum(a) {
 //     return function(b) {
@@ -37,7 +36,6 @@
 // console.log(sum(2)(6)(3));
 // console.log(sum(2)(6));
 // console.log(sum(2));
-
 
 // Q2--
 
@@ -58,13 +56,9 @@
 //     }
 // }
 
-
-
 // console.log(evalute("sum")(4)(2));
 
-
 //Q3 -- Infinite Currying -> sum(1)(2)(3).....(n)
-
 
 function add(a) {
     return function(b) {

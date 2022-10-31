@@ -45,3 +45,25 @@ var countGoodTriplets = function (arr, a, b, c) {
 };
 console.log(countGoodTriplets([3, 0, 1, 1, 9, 7], 7, 2, 3));
 console.log(countGoodTriplets([1, 1, 2, 2, 3], 0, 0, 1));
+
+// -------------------------------------------------------
+
+var smallerNumbersThanCurrent = function (nums) {
+  answer = [];
+  for (let i = 0; i < nums.length; i++) {
+    let count = 0;
+    for (let j = 0; j < nums.length; j++) {
+      if (nums[i] > nums[j]) {
+        count++;
+      }
+    }
+    answer.push(count);
+  }
+  return answer;
+};
+
+console.log(smallerNumbersThanCurrent([8, 1, 2, 2, 3]));
+
+//
+const mapper = (arr) => arr.map((i) => arr.filter((n) => n < i).length);
+console.log(mapper([8, 1, 2, 2, 3]));
