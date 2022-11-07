@@ -35,7 +35,9 @@
 // const BetterFunction = debounce(getdata, 1000);
 let count = 0;
 
-function getdata() {}
+function getdata() {
+    console.log("yes it is working" + count++);
+}
 
 function debounce(callback, delay) {
     let timer;
