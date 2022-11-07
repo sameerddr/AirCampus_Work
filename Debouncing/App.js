@@ -36,7 +36,7 @@
 let count = 0;
 
 function getdata() {
-    console.log("yes it is working" + count++);
+    // console.log("yes it is working" + count++);
 }
 
 function debounce(callback, delay) {
