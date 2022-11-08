@@ -67,3 +67,15 @@
 
 // const mapper = (arr) => arr.map((i) => arr.filter((n) => n < i).length);
 // console.log(mapper([8, 1, 2, 2, 3]));
+
+function myFunction(arr, a) {
+    console.log(a);
+    return arr.filter((x, y = a) => {
+        console.log(y);
+        console.log(x);
+        // if (arr[i]==a) {
+
+        // }
+    });
+}
+console.log(myFunction([1, 2, 3, 4], 2));
