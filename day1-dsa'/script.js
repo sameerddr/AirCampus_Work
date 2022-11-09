@@ -68,14 +68,104 @@
 // const mapper = (arr) => arr.map((i) => arr.filter((n) => n < i).length);
 // console.log(mapper([8, 1, 2, 2, 3]));
 
-function myFunction(arr, a) {
-    console.log(a);
-    return arr.filter((x, y = a) => {
-        console.log(y);
-        console.log(x);
-        // if (arr[i]==a) {
+// function myFunction(a) {
+//     let p = a.splice(0, 3);
+//     if (a.length > 0) {
+//         return a;
+//     } else {
+//         return [];
+//     }
+// }
+// console.log(myFunction([1, 2, 3, 4, 5, 6, 6, 7]));
 
-        // }
-    });
+console.log("Starting");
+console.log(isNaN("Hello"));
+console.log(isNaN(true));
+console.log(isNaN(false));
+console.log(isNaN(22.3));
+console.log(isNaN(undefined));
+
+function greet() {
+    console.log("say Good evening");
 }
-console.log(myFunction([1, 2, 3, 4], 2));
+greet();
+
+let s = function() {
+    console.log("sameer");
+};
+s();
+
+(function sum(a, b) {
+    console.log(a + b);
+});
+
+let sum = (x, y) => {
+    console.log(x + y);
+};
+sum(2, 5);
+
+const radius = [1, 2, 3, 4, 5];
+
+const area = function(radius) {
+    return 2 * Math.PI * radius;
+};
+const diameter = function(radius) {
+    return 2 * radius;
+};
+
+const calculate = function(radius, logic) {
+    let output = [];
+    for (let i = 0; i < radius.length; i++) {
+        console.log(logic);
+        console.log(radius);
+        output.push(logic(radius[i]));
+    }
+    return output;
+};
+console.log(calculate(radius, area));
+console.log(calculate(radius, diameter));
+
+const property = "firstname";
+const firstname = "sameer";
+
+const user = {
+    property: "name",
+    [property]: "name",
+};
+console.log(user);
+
+const biodata = {
+    name: "vinod",
+    age: 26,
+    a: "c",
+};
+
+const { name, age, a } = biodata;
+console.log(`${name}${age}${a}`);
+
+function robar(name) {
+    return {
+        name: name,
+        talk: function() {
+            console.log("hi " + name);
+        },
+    };
+}
+
+const obj1 = robar("sameer");
+obj1.talk();
+const obj2 = robar("ramesh");
+obj2.talk();
+
+function student(fn, ls) {
+    console.log(this + "this is this");
+    this.firstname = fn;
+    this.lastname = ls;
+    this.getname = function() {
+        console.log(this.firstname);
+        console.log(this.lastname);
+    };
+}
+let stu = new student("sam", "var");
+stu.getname();
+console.log(stu);
