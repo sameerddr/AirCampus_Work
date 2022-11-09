@@ -162,7 +162,7 @@ function student(fn, ls) {
     this.firstname = fn;
     this.lastname = ls;
     this.getname = function() {
-        console.log(this.firstname);
+        // console.log(this.firstname);
         console.log(this.lastname);
     };
 }
