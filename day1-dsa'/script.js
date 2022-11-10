@@ -169,3 +169,11 @@ function student(fn, ls) {
 let stu = new student("sam", "var");
 stu.getname();
 console.log(stu);
+
+let rest1 = {
+    age: 21,
+    age2: 22,
+};
+
+let x = {...rest1 };
+console.log(x);
