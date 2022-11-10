@@ -174,6 +174,7 @@ let rest1 = {
     age: 21,
     age2: 22,
 };
+console.log(stu);
 
 let x = {...rest1 };
 console.log(x);
