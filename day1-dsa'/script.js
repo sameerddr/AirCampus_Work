@@ -168,7 +168,7 @@ function student(fn, ls) {
 }
 let stu = new student("sam", "var");
 stu.getname();
-// console.log(stu);
+console.log(stu);
 
 let rest1 = {
     age: 21,
