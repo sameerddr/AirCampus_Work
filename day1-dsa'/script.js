@@ -178,4 +178,3 @@ console.log(stu);
 
 let x = {...rest1 };
 console.log(x);
-console.log(x);
