@@ -78,103 +78,185 @@
 // }
 // console.log(myFunction([1, 2, 3, 4, 5, 6, 6, 7]));
 
-console.log("Starting");
-console.log(isNaN("Hello"));
-console.log(isNaN(true));
-console.log(isNaN(false));
-console.log(isNaN(22.3));
-console.log(isNaN(undefined));
+// console.log("Starting");
+// console.log(isNaN("Hello"));
+// console.log(isNaN(true));
+// console.log(isNaN(false));
+// console.log(isNaN(22.3));
+// console.log(isNaN(undefined));
 
-function greet() {
-    console.log("say Good evening");
+// function greet() {
+//     console.log("say Good evening");
+// }
+// greet();
+
+// let s = function() {
+//     console.log("sameer");
+// };
+// s();
+
+// (function sum(a, b) {
+//     console.log(a + b);
+// });
+
+// let sum = (x, y) => {
+//     console.log(x + y);
+// };
+// sum(2, 5);
+
+// const radius = [1, 2, 3, 4, 5];
+
+// const area = function(radius) {
+//     return 2 * Math.PI * radius;
+// };
+// const diameter = function(radius) {
+//     return 2 * radius;
+// };
+
+// const calculate = function(radius, logic) {
+//     let output = [];
+//     for (let i = 0; i < radius.length; i++) {
+//         console.log(logic);
+//         console.log(radius);
+//         output.push(logic(radius[i]));
+//     }
+//     return output;
+// };
+// console.log(calculate(radius, area));
+// console.log(calculate(radius, diameter));
+
+// const property = "firstname";
+// const firstname = "sameer";
+
+// const user = {
+//     property: "name",
+//     [property]: "name",
+// };
+// console.log(user);
+
+// const biodata = {
+//     name: "vinod",
+//     age: 26,
+//     a: "c",
+// };
+
+// const { name, age, a } = biodata;
+// console.log(`${name}${age}${a}`);
+
+// function robar(name) {
+//     return {
+//         name: name,
+//         talk: function() {
+//             console.log("hi " + name);
+//         },
+//     };
+// }
+
+// const obj1 = robar("sameer");
+// obj1.talk();
+// const obj2 = robar("ramesh");
+// obj2.talk();
+
+// function student(fn, ls) {
+//     console.log(this + "this is this");
+//     this.firstname = fn;
+//     this.lastname = ls;
+//     this.getname = function() {
+//         console.log(this.firstname);
+//         console.log(this.lastname);
+//     };
+// }
+// let stu = new student("sam", "var");
+// stu.getname();
+// console.log(stu);
+
+// let rest1 = {
+//     age: 21,
+//     age2: 22,
+// };
+// console.log(stu);
+
+// let x = {...rest1 };
+// console.log(x);
+
+function x() {
+    let a = 7;
+    y();
+
+    function y() {
+        a = 100;
+        console.log(a);
+    }
+    a = 200;
 }
-greet();
+x();
 
-let s = function() {
-    console.log("sameer");
-};
-s();
+const cart = ["shoes", "shirt", "pant"];
 
-(function sum(a, b) {
-    console.log(a + b);
+function sum(a) {
+    return function(b) {
+        return function(c) {
+            return a + b + c;
+        };
+    };
+}
+
+console.log(sum(2)(3)(4));
+
+// function getdata() {
+//     console.log("sameer");
+// }
+
+// function debounce(callback, delay) {
+//     let timer;
+//     return function(...args) {
+//         if (timer) clearTimeout(timer);
+//         setTimeout(() => {
+//             callback;
+//         }, delay);
+//     };
+// }
+
+// const bettterfunction = debounce(getdata, 1000);
+
+const promise = new Promise(function(resolve, reject) {
+    const x = "sameer";
+    const y = "sameesdfr";
+    if (x == y) {
+        resolve();
+    } else {
+        reject();
+    }
 });
 
-let sum = (x, y) => {
-    console.log(x + y);
-};
-sum(2, 5);
+promise
+    .then(function reject() {
+        console.log("sucess");
+    })
+    .catch(function resolve() {
+        console.log("fail");
+    });
 
-const radius = [1, 2, 3, 4, 5];
-
-const area = function(radius) {
-    return 2 * Math.PI * radius;
-};
-const diameter = function(radius) {
-    return 2 * radius;
-};
-
-const calculate = function(radius, logic) {
-    let output = [];
-    for (let i = 0; i < radius.length; i++) {
-        console.log(logic);
-        console.log(radius);
-        output.push(logic(radius[i]));
+function factorial(x) {
+    if (x == 0 || x < 1) {
+        return 1;
+    } else {
+        return x * factorial(x - 1);
     }
-    return output;
-};
-console.log(calculate(radius, area));
-console.log(calculate(radius, diameter));
+}
+console.log(factorial(-4));
 
-const property = "firstname";
-const firstname = "sameer";
+let arr1 = [1, 3, 4, 5];
+let arr2 = [11111111111111111, ...arr1];
+console.log(arr2);
+console.log(arr1);
 
-const user = {
-    property: "name",
-    [property]: "name",
-};
-console.log(user);
-
-const biodata = {
-    name: "vinod",
-    age: 26,
-    a: "c",
-};
-
-const { name, age, a } = biodata;
-console.log(`${name}${age}${a}`);
-
-function robar(name) {
-    return {
-        name: name,
-        talk: function() {
-            console.log("hi " + name);
-        },
-    };
+class user {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
 }
 
-const obj1 = robar("sameer");
-obj1.talk();
-const obj2 = robar("ramesh");
-obj2.talk();
-
-function student(fn, ls) {
-    console.log(this + "this is this");
-    this.firstname = fn;
-    this.lastname = ls;
-    this.getname = function() {
-        console.log(this.firstname);
-        console.log(this.lastname);
-    };
-}
-let stu = new student("sam", "var");
-stu.getname();
-console.log(stu);
-
-let rest1 = {
-    age: 21,
-    age2: 22,
-};
-console.log(stu);
-
-let x = {...rest1 };
-console.log(x);
+var obj1 = new user("sameer", 21);
+console.log(obj1);
