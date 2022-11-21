@@ -57,4 +57,4 @@ let board = [
     [".", ".", ".", ".", "8", ".", ".", "7", "9"],
 ];
 
-document.write(isValidConfig(board, 9) ? "YES" : "NO");
+// document.write(isValidConfig(board, 9) ? "YES" : "NO");
