@@ -34,11 +34,11 @@
 // }
 // console.log(simpleadding(140));
 
-function firstCapital(str) {
-    let words = str.split(" ");
-    for (let i = 0; i < words.length; i++) {
-        let o = words[i][0].toUpperCase() + words[i].slice(1);
-        return o;
-    }
-}
-console.log(firstCapital("i ran there"));
+// function firstCapital(str) {
+//     let words = str.split(" ");
+//     for (let i = 0; i < words.length; i++) {
+//         let o = words[i][0].toUpperCase() + words[i].slice(1);
+//         return o;
+//     }
+// }
+// console.log(firstCapital("i ran there"));
